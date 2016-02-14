@@ -1,0 +1,23 @@
+RPi IP: 192.168.2.1 / 192.168.2.2
+RPi MAC ADDR: 00:02:72:33:8B:4C
+Wifi password: 2015Grp2
+Port: 1234
+N7 MAC ADDR: 08:60:6E:A5:A4:1E
+
+
+
+(to be updated)
+Communication specifications:
+
+
+PC: A<S
+Arduino: P<0:1:2:0:0:0
+
+
+PC: A<F
+Arduino: Move forward;
+         BP<F
+PC:Receive F;
+   send next command
+Android: Receive F
+         update map

@@ -1,0 +1,4 @@
+1. time to make a turn: 
+2. time to move 1 grid:
+3. short distance range: 
+4. robot move between obstacles with 20cm freespace

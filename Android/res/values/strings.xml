@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">RoboFast2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name = "textview_bluetooth_devices">Paired Devices</string>
+	<string name = "textview_new_devices">New Devices</string>
+	<string name = "button_scanning">Scan</string>
+	
+    <string name="connection_label">Not Connected</string>
+    <string name="action_connect">Connect</string>
+    <string name="action_disconnect">Disconnect</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_start">START</string>
+    <string name="action_stop">STOP</string>
+    <string name="action_scan_devices">Scan for Devices</string>
+	
+</resources>

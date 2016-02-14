@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10sp"
+    android:paddingLeft="10sp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:background="#212121"
+    tools:context="com.example.robofast2.MainActivity" >
+    
+    <RelativeLayout
+   	    android:id="@+id/mapView"
+   	    android:layout_width="580dp"
+   	    android:layout_height="435dp"
+   	    android:layout_alignParentTop="true"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="60dp" 
+   	    android:padding="10dp">
+   	    <!-- android:background="#545456" -->
+   	</RelativeLayout>
+    
+    <ImageButton
+        android:id="@+id/buttonUp"
+        android:layout_width="50dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="230dp"
+        android:layout_marginLeft="105dp"
+        android:padding="0dp"
+        android:background="@null"
+        android:scaleType="fitEnd"
+        android:src="@drawable/up" />
+
+   	<ImageButton
+   	    android:id="@+id/buttonYellow"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="102dp"
+		android:layout_alignTop="@+id/buttonUp"
+   	    android:padding="0dp"
+   	    android:scaleType="fitCenter"
+   	    android:background="@null"
+   	    android:src="@drawable/yellow1" />
+   	
+   	<ImageButton
+   	    android:id="@+id/buttonBlue"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="160dp"
+		android:layout_alignTop="@+id/buttonRight"
+   	    android:background="@null"
+   	    android:padding="0dp"
+   	    android:scaleType="fitCenter"
+   	    android:src="@drawable/blue" />
+   	   	
+   	<ImageButton
+   	    android:id="@+id/buttonRed"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="40dp"
+		android:layout_alignTop="@+id/buttonRight"
+   	    android:background="@null"
+   	    android:padding="0dp"
+   	    android:scaleType="fitCenter"
+   	    android:src="@drawable/red1" />
+
+   	<ImageButton
+   	    android:id="@+id/buttonDown"
+   	    android:layout_width="50dp"
+   	    android:layout_height="70dp"
+   	    android:layout_alignLeft="@+id/buttonUp"
+   	    android:layout_alignParentBottom="true"
+   	    android:layout_marginBottom="130dp"
+   	    android:background="@null"
+   	    android:padding="0dp"
+   	    android:scaleType="fitEnd"
+   	    android:src="@drawable/down" />
+
+   	<ImageButton
+   	    android:id="@+id/buttonLeft"
+   	    android:layout_width="70dp"
+   	    android:layout_height="50dp"
+   	    android:layout_alignRight="@+id/buttonUp"
+   	    android:layout_below="@+id/buttonYellow"
+   	    android:layout_marginRight="38dp"
+   	    android:background="@null"
+   	    android:padding="0dp"
+   	    android:scaleType="fitEnd"
+   	    android:src="@drawable/left" />
+
+   	<ImageButton
+   	    android:id="@+id/buttonRight"
+   	    android:layout_width="70dp"
+   	    android:layout_height="50dp"
+   	    android:layout_alignLeft="@+id/buttonUp"
+   	    android:layout_alignTop="@+id/buttonLeft"
+   	    android:layout_marginLeft="35dp"
+   	    android:background="@null"
+   	    android:padding="0dp"
+   	    android:scaleType="fitEnd"
+   	    android:src="@drawable/right" />
+
+   	<ImageButton
+   	    android:id="@+id/buttonGreen"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+   	    android:layout_alignLeft="@+id/buttonYellow"
+   	    android:layout_below="@+id/buttonRight"
+   	    android:padding="0dp"
+   	    android:scaleType="fitCenter"
+   	    android:background="@null"
+   	    android:src="@drawable/green"
+   	    android:enabled="false" />
+
+   	<TextView
+   	    android:id="@+id/statusTextView"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/bluetoothMessage"
+   	    android:textAlignment="center"
+   	    android:layout_centerHorizontal="true" />
+   	
+   	<TextView
+   	    android:id="@+id/bluetoothMessage"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="50dp"
+   	    android:layout_below="@+id/mapView"
+   	    android:textAlignment="center"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="12dp"
+   	     />
+
+   	<Button
+   	    android:id="@+id/buttonConnect"
+   	    style="?android:attr/buttonStyleSmall"
+   	    android:layout_width="80dp"
+   	    android:layout_height="30dp"
+   	    android:layout_marginTop="24dp"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_marginLeft="20dp"
+   	    android:background="#606062"
+   	    android:textColor="#ffffff"
+   	    android:text="Connect" />
+
+   	<Button
+   	    android:id="@+id/buttonConfig"
+   	    style="?android:attr/buttonStyleSmall"
+   	    android:layout_width="80dp"
+   	    android:layout_height="30dp"
+   	    android:layout_alignBaseline="@+id/buttonConnect"
+   	    android:layout_alignBottom="@+id/buttonConnect"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_marginRight="20dp"
+   	    android:background="#606062"
+   	    android:textColor="#ffffff"
+   	    android:text="Config" />
+
+   	<Switch
+   	    android:id="@+id/updateMapSwitch"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="30dp"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_marginLeft="5dp"
+   	    android:text="Auto Update"
+   	    />
+   	<!-- android:theme="@style/AppTheme"
+   	    android:background="@color/apptheme_color" -->
+
+   	<Switch
+   	    android:id="@+id/startPositon"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_alignBottom="@+id/updateMapSwitch"
+   	    android:layout_alignBaseline="@+id/updateMapSwitch"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_marginRight="5dp" 
+   	    android:text="Start Position" />
+
+   	<Button
+   	    android:id="@+id/buttonExplore"
+   	    android:layout_width="120dp"
+   	    android:layout_height="60dp"
+   	    android:layout_alignBottom="@+id/startPositon"
+   	    android:layout_alignParentLeft="true"
+   	    android:layout_marginLeft="165dp"
+   	    android:text="Start Explore" />
+   	
+   	<Button
+   	    android:id="@+id/buttonRun"
+   	    android:layout_width="120dp"
+   	    android:layout_height="60dp"
+   	    android:layout_alignBottom="@+id/startPositon"
+   	    android:layout_alignParentRight="true"
+   	    android:layout_marginRight="165dp"
+   	    android:text="Fastest Path"
+   	    android:enabled="false" />
+
+   	<Switch
+   	    android:id="@+id/tiltSensorSwitch"
+   	    android:layout_width="wrap_content"
+   	    android:layout_height="wrap_content"
+   	    android:layout_below="@+id/buttonGreen"
+   	    android:layout_centerHorizontal="true"
+   	    android:text="Tilt Sensor" />
+
+   	<ImageView
+   	    android:id="@+id/imageView1"
+   	    android:layout_width="250dp"
+   	    android:layout_height="60dp"
+   	    android:layout_centerHorizontal="true"
+   	    android:layout_marginTop="0dp"
+   	    android:src="@drawable/logo" />
+
+</RelativeLayout>
